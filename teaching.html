@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+  teaching.html — TEACHING PAGE
+  Two parts:
+    1. A table of courses taught (add a new row for each new course).
+    2. A "Course Materials" section for lecture notes — currently showing
+       placeholders. Upload PDFs to the files/ folder and link them here.
+=========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching — Tushar Bag</title>
+  <meta name="description" content="Courses taught by Tushar Bag at SRM University AP, Carleton University and IIT Patna, with lecture materials.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"], ["$", "$"]] } };
+  </script>
+  <script defer src="js/mathjax/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Tushar Bag</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">&#9776;</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html" aria-current="page">Teaching</a></li>
+          <li><a href="students.html">Open Positions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <div class="reveal">
+        <p class="eyebrow">Teaching</p>
+        <h1 class="page-title">Teaching</h1>
+        <p class="lead">
+          I have taught undergraduate mathematics as instructor at SRM
+          University AP and Carleton University.
+        </p>
+      </div>
+
+      <!-- ======================= COURSES TABLE ========================== -->
+      <section class="reveal">
+        <h2 class="section-title">Courses Taught</h2>
+
+        <!-- TO ADD A COURSE: copy one <tr>…</tr> row and paste it at the TOP
+             of <tbody> (newest first). The .code cell is the course number. -->
+        <div class="table-wrap">
+          <table class="courses">
+            <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Course</th>
+                <th scope="col">Term</th>
+                <th scope="col">Institution / Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">FIC 103</td>
+                <td>Calculus for Engineers</td>
+                <td>Odd Sem. 2026</td>
+                <td>SRM University AP — Instructor</td>
+              </tr>
+              <tr>
+                <td class="code">QIC 150</td>
+                <td>Linear Algebra and Group Theory</td>
+                <td>Odd Sem. 2026</td>
+                <td>SRM University AP — Instructor</td>
+              </tr>
+              <tr>
+                <td class="code">FIC 117</td>
+                <td>Linear Algebra and Differential Equations</td>
+                <td>Even Sem. 2026</td>
+                <td>SRM University AP — Instructor</td>
+              </tr>
+              <tr>
+                <td class="code">FIC 103</td>
+                <td>Calculus for Engineers</td>
+                <td>Odd Sem. 2025</td>
+                <td>SRM University AP — Instructor</td>
+              </tr>
+              <tr>
+                <td class="code">MATH 1007</td>
+                <td>Elementary Calculus I</td>
+                <td>Fall 2022</td>
+                <td>Carleton University — Instructor</td>
+              </tr>
+              <tr>
+                <td class="code">MATH 1107</td>
+                <td>Linear Algebra I</td>
+                <td>Summer 2022</td>
+                <td>Carleton University — Instructor</td>
+              </tr>
+              <!-- HIDDEN: IIT Patna Teaching Assistant rows (MA 201, MA 427).
+                   To bring them back, un-comment this block:
+              <tr>
+                <td class="code">MA 201</td>
+                <td>Complex Analysis &amp; Partial Differential Equations</td>
+                <td>Spring 2017</td>
+                <td>IIT Patna — Teaching Assistant</td>
+              </tr>
+              <tr>
+                <td class="code">MA 427</td>
+                <td>Abstract Algebra</td>
+                <td>Autumn 2016</td>
+                <td>IIT Patna — Teaching Assistant</td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- HIDDEN: "Earlier" line about DPS Bhagalpur. To bring it back,
+             un-comment this block:
+        <p class="muted small" style="margin-top:1rem">
+          Earlier: mathematics teacher at Delhi Public School Bhagalpur,
+          India (Aug. 2014 – Jan. 2016).
+        </p>
+        -->
+      </section>
+
+      <!-- =================================================================
+           HIDDEN FOR NOW: COURSE MATERIALS
+           To bring this section back, delete the comment-open line right
+           above this note and the comment-close line at the bottom of this
+           block (the row of equals signs), leaving the HTML in between as-is.
+
+      <section class="reveal">
+        <h2 class="section-title">Course Materials</h2>
+        <div class="prose">
+          <p class="muted">
+            Lecture notes and problem sets for current courses will be posted
+            here. [Placeholder — upload PDFs to the files/
+            folder and add links; see MANUAL.md, section 6.4.]
+          </p>
+
+          Template (copy into a real section, edit):
+          <h3>FIC 117 — Linear Algebra and Differential Equations (2026)</h3>
+          <ul>
+            <li><a href="files/fic117-syllabus.pdf">Syllabus (PDF)</a></li>
+            <li><a href="files/fic117-notes-week1.pdf">Week 1 — Systems of linear equations (PDF)</a></li>
+            <li><a href="files/fic117-problemset1.pdf">Problem Set 1 (PDF)</a></li>
+          </ul>
+        </div>
+      </section>
+      ================================================================== -->
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Tushar Bag</span>
+      <span>Department of Mathematics, SRM University AP</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+  index.html — HOME PAGE
+  This is the first page visitors see. It merges: About Me, Contact, News,
+  and a short list of selected publications.
+
+  A full "Biography" section is included lower down but COMMENTED OUT —
+  search for "OPTIONAL: BIOGRAPHY" to enable it whenever you want.
+
+  TO EDIT: everything you would normally change is marked with
+  "EDIT:" comments. See MANUAL.md for step-by-step instructions.
+=========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDIT: The browser-tab title. Important for search engines (SEO). -->
+  <title>Tushar Bag — Assistant Professor of Mathematics, SRM University AP</title>
+
+  <!-- EDIT: One-sentence description shown in Google search results. -->
+  <meta name="description" content="Tushar Bag is an Assistant Professor of Mathematics at SRM University AP, India, working on algebraic coding theory and quantum error-correcting codes.">
+
+  <!-- Fonts (loaded from Google Fonts, free). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- The single stylesheet for the whole site. -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- MathJax (self-hosted in js/mathjax/): renders LaTeX like \( \mathbb{F}_q \).
+       Self-hosting means formulas work offline and never depend on an
+       external service. Never edit anything inside js/mathjax/. -->
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"], ["$", "$"]] } };
+  </script>
+  <script defer src="js/mathjax/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <!-- Invisible link that lets keyboard users jump past the menu. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ======================= HEADER / NAVIGATION ======================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Tushar Bag</a>
+
+      <!-- Hamburger button (visible only on phones). -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">&#9776;</button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <!-- aria-current="page" marks which page you are on (underlined in navy). -->
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="students.html">Open Positions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <!-- ======================= PROFILE / ABOUT ========================= -->
+      <section class="profile-grid reveal" aria-label="Profile">
+
+        <!-- Left column: photo + contact links. -->
+        <div class="profile-card">
+          <!-- EDIT: Replace images/profile.jpg with your own photo.
+               A portrait photo (taller than wide) looks best.            -->
+          <img class="profile-photo" src="images/profile.jpg"
+               alt="Portrait of Tushar Bag" width="520" height="650">
+
+          <ul class="profile-links">
+            <li><span class="tag">email</span>
+                <a href="mailto:tushar.b@srmap.edu.in">tushar.b@srmap.edu.in</a></li>
+            <li><span class="tag">personal</span>
+                <a href="mailto:tusharbag2011@gmail.com">tusharbag2011@gmail.com</a></li>
+            <li><span class="tag">scholar</span>
+                <a href="https://scholar.google.com/citations?user=K16G4oQAAAAJ&amp;hl=en">Google Scholar</a></li>
+            <li><span class="tag">research</span>
+                <a href="https://www.researchgate.net/profile/Tushar-Bag">ResearchGate</a></li>
+            <!-- EDIT: add more profiles by copying a line above, e.g.:
+            <li><span class="tag">orcid</span>
+                <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a></li>
+            <li><span class="tag">github</span>
+                <a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+            <li><span class="tag">linkedin</span>
+                <a href="https://www.linkedin.com/in/YOUR-NAME">LinkedIn</a></li>
+            -->
+            <li><span class="tag">office</span>
+                <span class="muted">
+                  Admin Block, 4th Floor, Cubicle No. 48
+                </span></li>
+          </ul>
+        </div>
+
+        <!-- Right column: name, role, and short "About me" text. -->
+        <div class="intro">
+          <p class="eyebrow">Assistant Professor · Mathematics</p>
+          <h1>Tushar Bag</h1>
+          <p class="role">
+            Department of Mathematics,
+            <a href="https://srmap.edu.in">SRM University&nbsp;AP</a>,
+            Amaravati, Andhra Pradesh, India
+          </p>
+
+          <!-- EDIT: your short "About me" paragraph. Keep it 3–5 sentences. -->
+          <p class="lead">
+            I am an Assistant Professor in the Department of Mathematics at
+            SRM University AP. My research lies in <strong>algebraic coding
+            theory</strong> and <strong>quantum error-correcting codes</strong>,
+            with a focus on cyclic, constacyclic and quasi-cyclic codes over
+            finite fields and finite rings, and their applications in
+            constructing new quantum codes.
+          </p>
+          <p class="prose">
+            Before joining SRM University AP, I held postdoctoral positions at
+            the École Normale Supérieure de Lyon (France), Carleton University
+            (Canada), and United Arab Emirates University. I received my Ph.D.
+            in Mathematics from the Indian Institute of Technology Patna, and
+            my M.Sc. in Mathematics from the Indian Institute of Technology
+            Kanpur.
+          </p>
+
+          <!-- HIDDEN: Download CV / View publications buttons. To bring
+               them back, un-comment this block:
+          <a class="btn solid" href="files/cv.pdf">Download CV (PDF)</a>
+          <a class="btn" href="publications.html">View publications</a>
+          -->
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           OPTIONAL: BIOGRAPHY
+           A longer biography section, currently switched off. To enable it,
+           delete the line with "<!- -" just below and the line with "- ->"
+           at the end of the section (both marked with BIOGRAPHY-SWITCH).
+      ==================================================================== -->
+      <!-- BIOGRAPHY-SWITCH: delete this line to turn the section ON
+      <section class="reveal" aria-label="Biography">
+        <h2 class="section-title">Biography</h2>
+        <div class="prose">
+          <p>
+            Tushar Bag received his B.Sc. in Mathematics from Ramakrishna
+            Mission Vidyamandira (Calcutta University) in 2012 and his M.Sc.
+            in Mathematics from IIT Kanpur in 2014. After teaching at Delhi
+            Public School Bhagalpur, he completed his Ph.D. at IIT Patna
+            (2016–2020), working in algebraic coding theory.
+          </p>
+          <p>
+            He subsequently held postdoctoral fellowships at United Arab
+            Emirates University (2021–2022), Carleton University, Ottawa
+            (2022–2023), and the École Normale Supérieure de Lyon (2023–2025),
+            before joining SRM University AP as Assistant Professor
+            in September 2025.
+          </p>
+          <p>[EDIT-PLACEHOLDER: add anything personal you wish — hobbies,
+             outreach, a note about your hometown, etc.]</p>
+        </div>
+      </section>
+      BIOGRAPHY-SWITCH: delete this line to turn the section ON -->
+
+
+      <!-- ============================ NEWS =============================== -->
+      <section class="reveal" aria-label="News">
+        <h2 class="section-title">News</h2>
+        <!-- EDIT: To post news, copy one <li>…</li> block and add it at the
+             TOP of the list (newest first). Keep 5–8 items; delete old ones. -->
+        <ul class="news-list">
+          <li>
+            <span class="news-date">2026-08</span>
+            <span>Joined the faculty of the newly launched
+                  <strong>Quantum Technology Institute (QuTI)</strong>,
+                  where I will be teaching quantum information theory and
+                  error correction as part of the program.
+                  <a href="https://www.srmap.edu.in/quti/">More about this
+                  program</a>.</span>
+          </li>
+          <li>
+            <span class="news-date">2026-08</span>
+            <span>Interested candidates for <strong>PhD</strong> and
+                  <strong>postdoctoral</strong> positions are welcome to
+                  write to me by
+                  <a href="mailto:tushar.b@srmap.edu.in">email</a>.</span>
+          </li>
+          <li>
+            <span class="news-date">2025-09</span>
+            <span>Joined <strong>SRM University AP</strong> as Assistant
+                  Professor in the Department of Mathematics.</span>
+          </li>
+          <!-- HIDDEN: 2025 paper-accepted item and 2023-07 postdoc item.
+               To bring them back, delete the comment-open line right above
+               this note and the comment-close line just below, leaving the
+               HTML in between as-is.
+          <li>
+            <span class="news-date">2025</span>
+            <span>Paper on quasi-polycyclic and skew quasi-polycyclic codes
+                  accepted in <em>Finite Fields and Their Applications</em>.</span>
+          </li>
+          <li>
+            <span class="news-date">2023-07</span>
+            <span>Started a postdoctoral fellowship at the
+                  École Normale Supérieure de Lyon, France.</span>
+          </li>
+          -->
+          <!-- Template for a new item (copy, un-comment, edit):
+          <li>
+            <span class="news-date">YYYY-MM</span>
+            <span>Your news text here.</span>
+          </li>
+          -->
+        </ul>
+      </section>
+
+
+      <!-- =================================================================
+           HIDDEN FOR NOW: SELECTED PUBLICATIONS
+           To bring this section back, delete the comment-open line right
+           above this note and the comment-close line at the bottom of this
+           block (the row of equals signs), leaving the HTML in between as-is.
+
+      <section class="reveal" aria-label="Selected publications">
+        <h2 class="section-title">Selected Publications</h2>
+        <p class="muted small" style="margin-top:.8rem">
+          Three recent papers — see the
+          <a href="publications.html">full list</a> for all
+          25 journal papers and current preprints.
+        </p>
+
+        <ol class="pub-list">
+          <li class="pub-item">
+            <span class="pub-key">[J25]</span>
+            <div class="pub-body">
+              <span class="pub-title">Quasi-polycyclic and skew quasi-polycyclic
+                codes over \(\mathbb{F}_q\)</span><br>
+              <span class="me">T. Bag</span> and D. Panario.
+              <span class="pub-venue">Finite Fields and Their Applications</span>
+              <strong>101</strong>, 102536, 2025.
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-key">[J24]</span>
+            <div class="pub-body">
+              <span class="pub-title">One-generator quasi-cyclic codes and their
+                dual codes</span><br>
+              K. Abdukhalikov, <span class="me">T. Bag</span> and D. Panario.
+              <span class="pub-venue">Discrete Mathematics</span>
+              <strong>346</strong>(6), 113369, 2023.
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-key">[J22]</span>
+            <div class="pub-body">
+              <span class="pub-title">On a class of skew constacyclic codes over
+                mixed alphabets and applications in constructing optimal and
+                quantum codes</span><br>
+              H. Q. Dinh, <span class="me">T. Bag</span>, K. Abdukhalikov,
+              S. Pathak, A. K. Upadhyay, R. Bandi and W. Chinnakum.
+              <span class="pub-venue">Cryptography and Communications</span>
+              <strong>15</strong>, 171–198, 2023.
+            </div>
+          </li>
+        </ol>
+      </section>
+      ================================================================== -->
+
+    </div>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Tushar Bag</span>
+      <span>Department of Mathematics, SRM University AP</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

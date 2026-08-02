@@ -1,0 +1,5 @@
+# robots.txt — instructions for search-engine crawlers.
+#
+# The site is public: all crawlers are allowed to index it.
+User-agent: *
+Allow: /

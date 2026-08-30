@@ -195,8 +195,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); line-height: 1
 .section-title {
   font-size: 1.45rem;
   font-weight: 600;
-  margin: 4.5rem 0 0;
-  padding-bottom: .55rem;
+  margin: 6rem 0 0;
+  padding-bottom: .9rem;
   border-bottom: 2px solid var(--navy);
 }
 .section-title:first-of-type { margin-top: 0; }

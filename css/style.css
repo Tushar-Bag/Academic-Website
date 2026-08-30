@@ -195,8 +195,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); line-height: 1
 .section-title {
   font-size: 1.45rem;
   font-weight: 600;
-  margin: 2.8rem 0 0;
-  padding-bottom: .35rem;
+  margin: 6rem 0 0;
+  padding-bottom: .9rem;
   border-bottom: 2px solid var(--navy);
 }
 .section-title:first-of-type { margin-top: 0; }
@@ -327,14 +327,14 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); line-height: 1
 /* ============================================================
    7. PUBLICATIONS
    ============================================================ */
-.pub-list { list-style: none; margin: 1.2rem 0 0; padding: 0; }
+.pub-list { list-style: none; margin: 1.7rem 0 0; padding: 0; }
 
 /* Each publication: monospace key on the left, reference on the right. */
 .pub-item {
   display: grid;
   grid-template-columns: 4.4rem 1fr;
   gap: 1.1rem;
-  padding: .85rem 0;
+  padding: 1.3rem 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -457,8 +457,8 @@ table.courses td.code { font-family: var(--font-mono); font-size: .8rem; color: 
    ============================================================ */
 .reveal {
   opacity: 0;
-  transform: translateY(12px);
-  transition: opacity .55s ease, transform .55s ease;
+  transform: translateY(8px);
+  transition: opacity .3s ease, transform .3s ease;
 }
 .reveal.visible { opacity: 1; transform: none; }
 

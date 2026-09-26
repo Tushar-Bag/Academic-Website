@@ -203,7 +203,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); line-height: 1
    (e.g. "Journal Papers" after "Preprints"). Set to match the space
    BELOW the heading line, so the heading sits evenly between the two.
    The first heading on each page gets no extra space. */
-section + section > .section-title { margin-top: 2.8rem; }
+section + section > .section-title { margin-top: 2.6rem; }
 
 .lead { font-size: 1.08rem; max-width: var(--prose-width); color: var(--ink); }
 .prose { max-width: var(--prose-width); }
